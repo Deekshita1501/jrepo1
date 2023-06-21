@@ -19,7 +19,7 @@ pipeline {
         stage('Push') {
             steps {
                 sh 'sudo echo $DOCKERHUB_CREDENTIAL_PSW | docker login -u $DOCKERHUB_CREDENTIAL_USR --password-stdin'
-                sh 'sudo docker push deekshita87/testrepo2'
+                sh 'sudo docker push deekshita87/testrepo2:testimg1'
             }
         }
     }
