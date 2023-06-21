@@ -4,7 +4,7 @@ pipeline {
         git 'Default'
     }
     options {
-        buildDiscarder(logRotator(numToKeppStr: '5'))
+        buildDiscarder(logRotator(numToKeepStr: '5'))
     }
     environment {
         DOCKERHUB_CREDENTIAL = credentials('docker')
