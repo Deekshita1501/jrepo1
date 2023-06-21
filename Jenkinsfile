@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'sudo docker build -t deekshita87/testrepo2'
+                sh 'sudo docker build -t deekshita87/testrepo2:testimg1'
             }
         }
         stage('Push') {
